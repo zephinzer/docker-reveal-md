@@ -1,0 +1,13 @@
+{
+  "name": "docker-reveal-md",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "reveal-md": "^3.0.4"
+  }
+}
