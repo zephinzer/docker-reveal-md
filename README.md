@@ -14,6 +14,13 @@ docker run -it \
   zephinzer/reveal-md:latest
 ```
 
+To use as an alias:
+
+```sh
+alias revealmd='docker run -it -v "$(pwd):/app/src" -p 12345:12345 zephinzer/reveal-md:latest';
+```
+
+
 ## Configuration
 One downside of using a Docker image is that you lose the functionality to [use a `reveal-md.json` to configure your slides](https://github.com/webpro/reveal-md#reveal-md-options). However, you can still do this using [the YAML Front Matter annotation](https://github.com/webpro/reveal-md#yaml-front-matter) so that your file looks like:
 
