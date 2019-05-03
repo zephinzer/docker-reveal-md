@@ -10,14 +10,14 @@ Create a directory with an `index.md` in it containing your slides. Then run:
 ```sh
 docker run -it \
   --volume "$(pwd):/app/src" \
-  --publish 12345:12345 \
+  --network host \
   zephinzer/reveal-md:latest
 ```
 
 To use as an alias:
 
 ```sh
-alias revealmd='docker run -it -v "$(pwd):/app/src" -p 12345:12345 zephinzer/reveal-md:latest';
+alias revealmd='docker run -it -v "$(pwd):/app/src" --network host zephinzer/reveal-md:latest';
 ```
 
 
